@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<locale>
+
+main(){
+	
+	setlocale(LC_ALL, "portuguese");
+	
+	//passo1 - colocar espaço para armazenar dados de entrada, ou seja, definir variáveis.
+	
+	char nome [50];
+	int idade;
+	char maticula[15];
+	char enderco[100];
+	char curso[50];
+	int peiodo;
+	char diciplinas[50];
+	float mensalidade;
+	
+	
+	printf("Nome: ");
+	fgets(nome, 50, stdin);
+	fflush(stdin);
+	
+	printf("\nIdade: ");
+	scanf("%d", &idade);
+	fflush(stdin);
+	
+	printf("\nMaticula: ");
+	fgets(maticula, 15, stdin);
+	fflush(stdin);
+	
+    printf("\nEnderco: ");
+    fgets(enderco, 100, stdin);
+    fflush(stdin);
+    
+    printf("\nCurso: ");
+    fgets(curso, 50, stdin);
+    fflush(stdin);
+    
+    printf("\nPeiodo: ");
+    scanf("%d", &idade);
+    fflush(stdin);
+    
+    printf("\nMensalidade: ");
+    scanf("%f", &mensalidade);
+    fflush(stdin);
