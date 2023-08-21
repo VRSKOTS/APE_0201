@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<locale.h>
+
+main(){
+	
+	setlocale(LC_ALL, "portuguese");
+	
+	//atividade 5
+	
+	float custo, valorfrete, despesas, valorVenda, lucro;
+	
+	printf("\nDigite o valor de custo da mercadoria: ");
+	scanf("%f", &custo);
+	
+	printf("\nDigite o valor do frete da mercadoria: ");
+	scanf("%f", &valorfrete);
+	
+	printf("\nDigite o valor do frete das despesas: ");
+	scanf("%f", &despesas);
+	
+	printf("\nDigite o valor de venda: ");
+	scanf("%f", &valorVenda);
+	
+	lucro = (custo + valorfrete + despesas + valorVenda);
+	
+	
+	
+}
